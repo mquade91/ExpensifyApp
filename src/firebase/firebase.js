@@ -19,26 +19,18 @@ firebase.initializeApp(config);
 const database = firebase.database();
 
 database.ref().set({
-  name: 'quade',
+  name: 'matt',
   age: 28,
   isSingle: true,
   location: {
     city: 'QC',
     state: 'NC'
   },
-
-});
-database.ref('age').set(33);
-// database.ref().set('this is my data');
-
-database.ref('location/city').set('washington');
-
-database.ref('attributes').set({
-  attributes: {
-    height: 5,
-    weight: 170,
-  }
+}).then(()=> {
+  console.log('sed')
+}).catch((err)=> {
+  console.log(err)
 })
-database.ref('attributes/height').set(6);
 
-database.ref('attributes/weight').set(180);
+
+// database.ref().remove().then(()=> console.log('deleted')).catch(err => console.log(err))
