@@ -1,6 +1,15 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+process.env.NODE_ENV = process.env.NODE_ENV || 'develop';
+
+if(process.env.NODE_ENV === 'test'){
+
+} else if(process.env.NODE_ENV === 'development') {
+  
+}
+
+
 module.exports = (env) => {
   const isProduction = env === 'production';
   const CSSExtract = new ExtractTextPlugin('styles.css')
