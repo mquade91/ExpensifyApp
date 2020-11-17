@@ -39,12 +39,12 @@ export {firebase, database as default };
 //       expenses.push({
 //         id: childSnapShot.key,
 //         ...childSnapShot.val()
-// //       })
-// //     })
-// //     console.log(expenses)
-// //   }, (e) => {
-// //     console.log('error fetching data', e)
-// //   })
+//       })
+//     })
+//     console.log(expenses)
+//   }, (e) => {
+//     console.log('error fetching data', e)
+//   })
 
 // database.ref('expenses').push({
 //   description: 'Bill 1',
