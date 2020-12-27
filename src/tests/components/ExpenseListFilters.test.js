@@ -49,7 +49,6 @@ test('should handle sort by date', () => {
   const value = 'date';
   wrapper.setProps({
     filters: altFilters,
-
   })
   wrapper.find('select').simulate('change', {
     target: { value }
